@@ -57,4 +57,13 @@ const calculatorApp = combineReducers({
 
 ・render props
 
-・functional components vs class component
+# What's the difference between Functional Components and Class Components
+If you only need to write a simple function without accessing any "state", it is the time to use Functional Components
+
+- Functional Components: Props transfers into function can be directly render, without processing "state" or doing any "event handlers"
+
+
+- Class Components: Normal "React Components" life cycle
+
+
+
