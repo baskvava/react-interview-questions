@@ -4,8 +4,10 @@
 
 # Redux
 
-- Single data flow problem: data exchange between different "Component" is very difficult
-- To solve this problem: "Component" only need to send "Action" to subscribe the notification from "Store" 
+- Single data flow problem
+    - data exchange between different "Component" is very difficult
+- To solve this problem
+    - "Component" only need to send "Action" to subscribe the notification from "Store" 
                         to access data anywhere
 
 
@@ -39,8 +41,8 @@ const counter = (state = 0, action) => {
 
 
 - Why use combineReducers?
-We may use "combineReuducers" beacuse there many reducers
-They have to be combined as a one reducer to interact with "Store"
+    - We may use "combineReuducers" beacuse there many reducers
+    - They have to be combined as a one reducer to interact with "Store"
 
 ```javascript
 const calculatorApp = combineReducers({
@@ -60,10 +62,27 @@ const calculatorApp = combineReducers({
 # What's the difference between Functional Components and Class Components
 If you only need to write a simple function without accessing any "state", it is the time to use Functional Components
 
-- Functional Components: Props transfers into function can be directly render, without processing "state" or doing any "event handlers"
+- Function Component (just like a javascript function)
+  - Props transfers into function can be directly render
+  - without processing "state" or doing any "event handlers"
+  - it accepts a "props" objects and returns a "React element"
 
+```javascript
+function HelloVava(props) {
+  return <h1>Hello, {props.name} </h1>;
+}
+```
 
-- Class Components: Normal "React Components" life cycle
-
+- Class Component: 
+  - Manipulate normal "React Components" life cycle
+  - state 
+  
+```javascript
+class HelloVava extends React.Components {
+  render() {
+    return <h1> Hello, {this.props.name} </h1>
+  }
+}
+```
 
 
