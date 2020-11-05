@@ -77,7 +77,7 @@ function HelloVava(props) {
 
 - Class Component: 
   - Manipulate normal "React Components" life cycle
-  - state 
+  - Can manipulat "state" 
   
 ```javascript
 class HelloVava extends React.Components {
