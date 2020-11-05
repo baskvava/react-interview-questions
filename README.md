@@ -11,11 +11,12 @@
                         to access data anywhere
 
 
-
 ## Three major Components
-- Store: Data store in "Store" can make sure projects easier to be maintained and design
+- Store
+    - Data store in "Store" can make sure projects easier to be maintained and design
 
-- Action: Describe "Action type" and "Payload"
+- Action 
+    - Describe "Action type" and "Payload"
 
 ```javascript
 {
@@ -26,7 +27,8 @@
 }
 ```
 
-- Reducer: Manage and communicate with "Store"
+- Reducer
+    - Manage and communicate with "Store"
 
 ```javascript
 const counter = (state = 0, action) => {
