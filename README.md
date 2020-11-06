@@ -52,6 +52,8 @@ const calculatorApp = combineReducers({
 });
 ```
 
+- Redux.sega
+
 
 ・Hook
 
