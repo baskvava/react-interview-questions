@@ -62,11 +62,11 @@ const calculatorApp = combineReducers({
 - useState
 - useEffect
     
-・HOC
+## HOC
 
-・control vs uncontrol state
+## control vs uncontrol state
 
-・render props
+## render props
 
 # What's the difference between Functional Components and Class Components
 If you only need to write a simple function without accessing any "state", it is the time to use Functional Components
