@@ -55,8 +55,13 @@ const calculatorApp = combineReducers({
 - Redux.sega
 
 
-・Hook
-
+## Hook
+- Why using Hooks?
+  - Without any function can be resued on component, withouy using hooks, we try to use "HOC" or "Render Props" to solve reuse problems
+  - Add many unrelated functions into life cycles, such as adding "call API" or "Business Logic functinos" into "ComponentDidmount"
+- useState
+- useEffect
+    
 ・HOC
 
 ・control vs uncontrol state
@@ -66,7 +71,7 @@ const calculatorApp = combineReducers({
 # What's the difference between Functional Components and Class Components
 If you only need to write a simple function without accessing any "state", it is the time to use Functional Components
 
-- Function Component (just like a javascript function)
+- Function Component (just like a javascript function) : Stateless
   - Props transfers into function can be directly render
   - without processing "state" or doing any "event handlers"
   - it accepts a "props" objects and returns a "React element"
@@ -77,7 +82,7 @@ function HelloVava(props) {
 }
 ```
 
-- Class Component: 
+- Class Component: Stateful
   - Manipulate normal "React Components" life cycle
   - Can manipulat "state" 
   
