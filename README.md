@@ -55,7 +55,7 @@ const calculatorApp = combineReducers({
 - Redux.sega
 
 
-## Hook
+## Hooks
 - Why using Hooks?
   - Without any function can be resued on component, withouy using hooks, we try to use "HOC" or "Render Props" to solve reuse problems
   - Add many unrelated functions into life cycles, such as adding "call API" or "Business Logic functinos" into "ComponentDidmount"
@@ -102,3 +102,16 @@ class HelloVava extends React.Components {
  - XMLHttpRequests
  - node.js send http request
  - automatically transfer JSON data
+ 
+# redux-thunk vs redux-saga
+ - Basic Thunk 
+```javascript
+const increamentAsync = () => dispatch => {
+    setTimeout(() => {
+        dispatch(increment());
+    }, 1000)
+} 
+```
+ 
+ 
+ 
