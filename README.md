@@ -104,14 +104,31 @@ class HelloVava extends React.Components {
  - automatically transfer JSON data
  
 # redux-thunk vs redux-saga
+
+ - redux-thunk : hard to test ....
  - Basic Thunk 
 ```javascript
-const increamentAsync = () => dispatch => {
+const increaseAsync = () => dispatch => {
     setTimeout(() => {
         dispatch(increment());
     }, 1000)
 } 
 ```
- 
- 
+ - Advanced Thunk 
+ ```javascript
+ const fetchBalence = () => fetch('https://www.xxxxxxx.api')
+ const transferMoney = () => dispatch => (
+    fetchBalance().then(() => 
+        Promise.all([
+            dispatch(checkA(true)),
+            dispatch(checkB(true))
+        ])
+    ).then(() =>
+        dispatch(notifyA())
+    ).then(() =>
+        dispatch(moveSomthing())
+    )
+ )  
+ ```
+   
  
