@@ -132,3 +132,8 @@ const increaseAsync = () => dispatch => {
  ```
  - redux-saga: easily to test, easily to read and write, can be written as scripts
  
+ 
+# Virtual DOM vs Real DOM ？
+
+# Performance Tools **** Cool
+
