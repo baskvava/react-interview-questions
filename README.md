@@ -61,6 +61,7 @@ const calculatorApp = combineReducers({
   - Add many unrelated functions into life cycles, such as adding "call API" or "Business Logic functinos" into "ComponentDidmount"
 - useState
 - useEffect
+- useMemo
     
 ## HOC
 
